@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": true,
+  "explorer.fileNesting.patterns": {
+    "*.svelte": "${capture}.css.ts"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80,
+    "editor.quickSuggestions": false
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  }
+}
