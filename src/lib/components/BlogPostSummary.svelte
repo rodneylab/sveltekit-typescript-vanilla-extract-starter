@@ -30,8 +30,6 @@
     goto(`/${slug}`);
   };
 
-  // const date = dayjs(datePublished);
-  // const dateString = `${date.format('D')} ${date.format('MMM')}`;
   const date = Temporal.Instant.from(datePublished);
   const dateString = date.toLocaleString('en-GB', { day: 'numeric', month: 'short' });
   const idString = `blog-post-summary-${slug}`;

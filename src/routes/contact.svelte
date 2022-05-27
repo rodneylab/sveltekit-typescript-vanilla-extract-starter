@@ -1,10 +1,8 @@
 <script lang="ts">
   import Card from '$lib/components/Card.svelte';
   import ExternalLink from '$lib/components/ExternalLink.svelte';
-  import TiktokIcon from '$lib/components/Icons/Tiktok.svelte';
   import FacebookIcon from '$lib/components/Icons/Facebook.svelte';
   import TwitterIcon from '$lib/components/Icons/Twitter.svelte';
-  import LinkedinIcon from '$lib/components/Icons/LinkedIn.svelte';
   import TelegramIcon from '$lib/components/Icons/Telegram.svelte';
   import EmailIcon from '$lib/components/Icons/Email.svelte';
   import SEO from '$lib/components/SEO/index.svelte';

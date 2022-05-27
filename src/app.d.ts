@@ -57,8 +57,8 @@ export type SEOImage = {
   url: string;
   alt: string;
 };
-// types for vite-imagetools imports
 
+// types for vite-imagetools imports
 export declare global {
   export module '*.jpg?w=1344;672&jpeg&srcset';
   export module '*.jpg?w=1344;672&webp&srcset';
