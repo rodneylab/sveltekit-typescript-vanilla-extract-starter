@@ -16,7 +16,7 @@ export const container = style({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  width: [maxWidthFull],
+  width: maxWidthFull,
   marginTop: spacing24,
   padding: [spacing12, spacing0],
   backgroundColor: themeVars.colour.alternative,
@@ -26,7 +26,7 @@ export const container = style({
 export const content = style({
   paddingTop: spacing12,
   paddingBottom: spacing8,
-  maxWidth: [maxWidthWrapper],
+  maxWidth: maxWidthWrapper,
 });
 
 export const copyrightText = style({
@@ -36,7 +36,7 @@ export const copyrightText = style({
 export const footerLink = style({
   selectors: {
     [`${content} &`]: {
-      fontWeight: [fontWeightBold],
+      fontWeight: fontWeightBold,
       textUnderlineOffset: spacing1,
       color: themeVars.colour.background,
     },

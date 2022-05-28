@@ -23,7 +23,7 @@ export const cardContent = style({
   borderColor: themeVars.colour.secondary,
   boxShadow: `${spacingPx2} ${spacing1} ${spacing1} ${themeVars.colour.shadow}`,
   backgroundColor: themeVars.colour.accent,
-  width: [maxWidthFull],
+  width: maxWidthFull,
 });
 
 export const contactDetails = style({
@@ -31,16 +31,16 @@ export const contactDetails = style({
 });
 
 export const header = style({
-  fontSize: [fontSize3],
+  fontSize: fontSize3,
 });
 
 export const summaryHeading = style({
-  fontSize: [fontSize4],
+  fontSize: fontSize4,
   marginTop: spacing0,
   color: themeVars.colour.textSecondary,
 });
 
 export const summaryText = style({
-  fontSize: [fontSize2],
+  fontSize: fontSize2,
   color: themeVars.colour.textSecondary,
 });

@@ -27,12 +27,12 @@ export const container = style({
 });
 
 export const main = style({
-  maxWidth: [maxWidthWrapper],
+  maxWidth: maxWidthWrapper,
   marginLeft: spacing6,
   marginRight: spacing6,
   '@media': {
     '(min-width: 768px)': {
-      width: [maxWidthFull],
+      width: maxWidthFull,
       padding: [spacing0, 'auto'],
       margin: ['auto'],
     },

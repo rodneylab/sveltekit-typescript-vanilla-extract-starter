@@ -9,5 +9,5 @@ const { maxWidthFull } = widths;
 
 export const container = style({
   margin: [spacing12, spacing0, spacing0],
-  width: [maxWidthFull],
+  width: maxWidthFull,
 });

@@ -11,8 +11,8 @@ export const postSummary = style({
   marginRight: `${calc(spacing6).negate()}`,
   '@media': {
     '(min-width: 768px)': {
-      marginLeft: [spacing0],
-      marginRight: [spacing0],
+      marginLeft: spacing0,
+      marginRight: spacing0,
     },
   },
 });

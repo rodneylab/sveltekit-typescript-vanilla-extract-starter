@@ -16,8 +16,8 @@ const { maxWidthFull } = widths;
 
 export const container = style({
   display: 'flex',
-  width: [maxWidthFull],
-  marginTop: [spacing12],
+  width: maxWidthFull,
+  marginTop: spacing12,
   '@media': {
     '(min-width: 768px)': {
       paddingLeft: 'auto',
@@ -27,13 +27,13 @@ export const container = style({
 });
 
 export const content = style({
-  border: [spacingPx2],
-  width: [maxWidthFull],
+  border: spacingPx2,
+  width: maxWidthFull,
   margin: [spacing0, 'auto'],
-  paddingTop: [spacing4],
-  paddingRight: [spacing10],
-  paddingBottom: [spacing4],
-  paddingLeft: [spacing10],
+  paddingTop: spacing4,
+  paddingRight: spacing10,
+  paddingBottom: spacing4,
+  paddingLeft: spacing10,
   selectors: {
     '&:hover, &:focus': {
       borderColor: themeVars.colour.text,
@@ -43,14 +43,14 @@ export const content = style({
   },
   '@media': {
     '(min-width: 768px)': {
-      borderRadius: [spacing1],
-      padding: [spacing4],
+      borderRadius: spacing1,
+      padding: spacing4,
     },
   },
 });
 
 export const contentHeadingContainer = style({
-  marginTop: [spacing0],
+  marginTop: spacing0,
 });
 
 export const contentHeading = style({
@@ -58,8 +58,8 @@ export const contentHeading = style({
   selectors: {
     [`${content} &`]: {
       color: themeVars.colour.alternative,
-      fontWeight: [fontWeightNormal],
-      textUnderlineOffset: [spacing2],
+      fontWeight: fontWeightNormal,
+      textUnderlineOffset: spacing2,
     },
     [`${content}:hover &,${content}:focus & `]: {
       color: themeVars.colour.secondary,
@@ -70,7 +70,7 @@ export const contentHeading = style({
 export const contentBody = style({
   color: themeVars.colour.alternative,
   fontSize: fontSize2,
-  margin: [spacing2],
+  margin: spacing2,
   selectors: {
     [`${content} &`]: {
       color: themeVars.colour.text,
@@ -84,7 +84,7 @@ export const contentBody = style({
 export const postMeta = style({
   display: 'grid',
   gridTemplateAreas: "'meta-date' 'meta-data'",
-  width: [maxWidthFull],
+  width: maxWidthFull,
   alignItems: 'baseline',
   '@media': {
     '(min-width: 768px)': {
@@ -96,12 +96,12 @@ export const postMeta = style({
 
 export const dateText = style({
   gridArea: 'meta-date',
-  fontFamily: [fontFamilyHeading],
-  fontSize: [fontSize3],
-  marginBottom: [spacing4],
+  fontFamily: fontFamilyHeading,
+  fontSize: fontSize3,
+  marginBottom: spacing4,
   '@media': {
     '(min-width: 768px)': {
-      marginBottom: [spacing0],
+      marginBottom: spacing0,
     },
   },
 });

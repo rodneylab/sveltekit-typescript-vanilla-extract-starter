@@ -18,8 +18,8 @@ export const container = style({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-end',
-  width: [maxWidthFull],
-  marginBottom: [spacing12],
+  width: maxWidthFull,
+  marginBottom: spacing12,
   '@media': {
     '(min-width: 768px)': {
       maxWidth: [maxWidthWrapper],
@@ -30,7 +30,7 @@ export const container = style({
 
 export const themeButtonContainer = style({
   display: 'flex',
-  width: [maxWidthFull],
+  width: maxWidthFull,
   paddingTop: spacing4,
   paddingBottom: spacing4,
   paddingLeft: spacing6,
@@ -46,7 +46,7 @@ export const themeButton = style({
   borderStyle: 'none',
   backgroundColor: 'transparent',
   color: themeVars.colour.text,
-  padding: [spacing3],
+  padding: spacing3,
   marginLeft: 'auto',
   marginRight: `${calc(spacing3).negate()}`,
   selectors: {
@@ -68,9 +68,9 @@ export const themeButton = style({
 
 export const content = style({
   flexDirection: 'row',
-  width: [maxWidthFull],
-  fontFamily: [fontFamilyHeading],
-  paddingRight: [spacing6],
+  width: maxWidthFull,
+  fontFamily: fontFamilyHeading,
+  paddingRight: spacing6,
   '@media': {
     '(min-width: 768px)': {
       paddingRight: spacing0,
@@ -98,7 +98,7 @@ export const navList = style({
 
 export const navListItem = style({
   display: 'flex',
-  fontSize: [fontSize5],
+  fontSize: fontSize5,
   marginLeft: spacing6,
   marginBottom: spacing1,
 });

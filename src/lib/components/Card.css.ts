@@ -10,20 +10,20 @@ const { maxWidthFull } = widths;
 
 export const container = style({
   display: 'flex',
-  width: [maxWidthFull],
+  width: maxWidthFull,
 });
 
 export const content = style({
-  width: [maxWidthFull],
+  width: maxWidthFull,
   border: [spacingPx2, 'solid', themeVars.colour.alternative],
   boxShadow: `${spacingPx2} ${spacing1} ${spacing1} ${themeVars.colour.shadow}`,
-  borderRadius: [spacing2],
-  margin: [spacing6],
+  borderRadius: spacing2,
+  margin: spacing6,
   padding: [spacing4, spacing6],
   '@media': {
     '(min-width: 768px)': {
-      marginLeft: [spacing12],
-      marginRight: [spacing12],
+      marginLeft: spacing12,
+      marginRight: spacing12,
     },
   },
 });
