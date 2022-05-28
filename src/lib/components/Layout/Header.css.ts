@@ -1,10 +1,14 @@
 import { themeVars } from '$lib/styles/themes/theme.css';
-import { fontFamilyHeading, fontSize5 } from '$lib/styles/vars/font.css';
+import { font } from '$lib/styles/vars/font.css';
 import { spacing } from '$lib/styles/vars/spacing.css';
 import { maxWidthFull, maxWidthWrapper } from '$lib/styles/vars/widths.css';
 import { style } from '@vanilla-extract/css';
 import { calc } from '@vanilla-extract/css-utils';
 
+const {
+  family: { fontFamilyHeading },
+  size: { fontSize5 },
+} = font;
 const {
   spacing: { spacing0, spacing1, spacing12, spacing2, spacing3, spacing4, spacing6 },
 } = spacing;

@@ -1,9 +1,12 @@
 import { themeVars } from '$lib/styles/themes/theme.css';
-import { fontSize2, fontSize3, fontSize4 } from '$lib/styles/vars/font.css';
+import { font } from '$lib/styles/vars/font.css';
 import { spacing } from '$lib/styles/vars/spacing.css';
 import { maxWidthFull } from '$lib/styles/vars/widths.css';
 import { style } from '@vanilla-extract/css';
 
+const {
+  size: { fontSize2, fontSize3, fontSize4 },
+} = font;
 const {
   spacing: { spacing0, spacing1, spacing12, spacingPx, spacingPx2 },
 } = spacing;

@@ -1,9 +1,12 @@
 import { themeVars } from '$lib/styles/themes/theme.css';
-import { fontWeightBold } from '$lib/styles/vars/font.css';
+import { font } from '$lib/styles/vars/font.css';
 import { spacing } from '$lib/styles/vars/spacing.css';
 import { maxWidthFull, maxWidthWrapper } from '$lib/styles/vars/widths.css';
 import { style } from '@vanilla-extract/css';
 
+const {
+  weight: { fontWeightBold },
+} = font;
 const {
   spacing: { spacing0, spacing1, spacing12, spacing24, spacing3, spacing6, spacing8 },
 } = spacing;
