@@ -1,7 +1,7 @@
 import { themeVars } from '$lib/styles/themes/theme.css';
 import { font } from '$lib/styles/vars/font.css';
 import { spacing } from '$lib/styles/vars/spacing.css';
-import { maxWidthFull, maxWidthWrapper } from '$lib/styles/vars/widths.css';
+import { widths } from '$lib/styles/vars/widths.css';
 import { style } from '@vanilla-extract/css';
 import { calc } from '@vanilla-extract/css-utils';
 
@@ -12,6 +12,7 @@ const {
 const {
   spacing: { spacing0, spacing1, spacing12, spacing2, spacing3, spacing4, spacing6 },
 } = spacing;
+const { maxWidthFull, maxWidthWrapper } = widths;
 
 export const container = style({
   display: 'flex',

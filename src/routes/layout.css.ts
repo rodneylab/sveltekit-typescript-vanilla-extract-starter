@@ -1,11 +1,12 @@
 import { themeVars } from '$lib/styles/themes/theme.css';
 import { spacing } from '$lib/styles/vars/spacing.css';
-import { maxWidthFull, maxWidthWrapper } from '$lib/styles/vars/widths.css';
+import { widths } from '$lib/styles/vars/widths.css';
 import { style } from '@vanilla-extract/css';
 
 const {
   spacing: { spacing0, spacing6 },
 } = spacing;
+const { maxWidthFull, maxWidthWrapper } = widths;
 
 export const container = style({
   display: 'flex',
