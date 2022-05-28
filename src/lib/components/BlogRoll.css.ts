@@ -1,6 +1,10 @@
-import { spacing0, spacing6 } from '$lib/styles/vars/spacing.css';
+import { spacing } from '$lib/styles/vars/spacing.css';
 import { style } from '@vanilla-extract/css';
 import { calc } from '@vanilla-extract/css-utils';
+
+const {
+  spacing: { spacing0, spacing6 },
+} = spacing;
 
 export const postSummary = style({
   marginLeft: `${calc(spacing6).negate()}`,

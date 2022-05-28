@@ -8,15 +8,20 @@ import {
 import { globalStyle, style } from '@vanilla-extract/css';
 import { themeVars } from './themes/theme.css';
 import {
-  spacing0,
-  spacing1,
-  spacing12,
-  spacing2,
-  spacing4,
-  spacing6,
-  spacing8,
-  spacingPx,
+  // spacing0,
+  // spacing1,
+  // spacing12,
+  // spacing2,
+  // spacing4,
+  // spacing6,
+  // spacing8,
+  // spacingPx,
+  spacing,
 } from './vars/spacing.css';
+
+const {
+  spacing: { spacing0, spacing1, spacing12, spacing2, spacing4, spacing6, spacing8, spacingPx },
+} = spacing;
 
 globalStyle('nav :is(ul, ol)', {
   listStyleType: 'none',
@@ -31,8 +36,8 @@ globalStyle('html', {
 });
 
 globalStyle('hr', {
-  height: [spacingPx],
-  border: [spacing0],
+  height: spacingPx,
+  border: spacing0,
 });
 
 globalStyle('html &:is(h1, h2, h3, h4, h5, h6, h7)', {
@@ -41,10 +46,10 @@ globalStyle('html &:is(h1, h2, h3, h4, h5, h6, h7)', {
 });
 
 globalStyle('ol, ul', {
-  marginLeft: [spacing0],
-  marginRight: [spacing0],
-  padding: [spacing0],
-  marginBottom: [spacing8],
+  marginLeft: spacing0,
+  marginRight: spacing0,
+  padding: spacing0,
+  marginBottom: spacing8,
   listStylePosition: 'inside',
   listStyleImage: 'none',
 });
@@ -59,7 +64,7 @@ globalStyle('a:hover, a:focus', {
 
 globalStyle('button', {
   cursor: 'pointer',
-  borderRadius: [spacing6],
+  borderRadius: spacing6,
   padding: [spacing2, spacing4],
   fontSize: [fontSize2],
   fontWeight: [fontWeightBlack],
@@ -84,10 +89,10 @@ globalStyle('button:focus, button:hover', {
 
 globalStyle('input, textarea', {
   borderStyle: 'solid',
-  borderWidth: [spacingPx],
+  borderWidth: spacingPx,
   borderColor: themeVars.colour.textSecondary,
   background: themeVars.colour.background,
-  borderRadius: [spacing1],
+  borderRadius: spacing1,
   lineHeight: [lineHeightNormal],
   padding: [spacing0, spacing2],
   color: themeVars.colour.text,

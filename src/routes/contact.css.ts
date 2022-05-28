@@ -1,14 +1,11 @@
 import { themeVars } from '$lib/styles/themes/theme.css';
 import { fontSize2 } from '$lib/styles/vars/font.css';
-import {
-  spacing1,
-  spacing12,
-  spacing2,
-  spacing4,
-  spacingPx,
-  spacingPx2,
-} from '$lib/styles/vars/spacing.css';
+import { spacing } from '$lib/styles/vars/spacing.css';
 import { style } from '@vanilla-extract/css';
+
+const {
+  spacing: { spacing1, spacing12, spacing2, spacing4, spacingPx, spacingPx2 },
+} = spacing;
 
 export const summaryText = style({
   fontSize: [fontSize2],

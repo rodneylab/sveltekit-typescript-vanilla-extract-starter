@@ -1,17 +1,13 @@
 import { themeVars } from '$lib/styles/themes/theme.css';
 import { fontFamilyHeading, fontSize5 } from '$lib/styles/vars/font.css';
-import {
-  spacing0,
-  spacing1,
-  spacing12,
-  spacing2,
-  spacing3,
-  spacing4,
-  spacing6,
-} from '$lib/styles/vars/spacing.css';
+import { spacing } from '$lib/styles/vars/spacing.css';
 import { maxWidthFull, maxWidthWrapper } from '$lib/styles/vars/widths.css';
 import { style } from '@vanilla-extract/css';
 import { calc } from '@vanilla-extract/css-utils';
+
+const {
+  spacing: { spacing0, spacing1, spacing12, spacing2, spacing3, spacing4, spacing6 },
+} = spacing;
 
 export const container = style({
   display: 'flex',
@@ -30,13 +26,13 @@ export const container = style({
 export const themeButtonContainer = style({
   display: 'flex',
   width: [maxWidthFull],
-  paddingTop: [spacing4],
-  paddingBottom: [spacing4],
-  paddingLeft: [spacing6],
-  paddingRight: [spacing6],
+  paddingTop: spacing4,
+  paddingBottom: spacing4,
+  paddingLeft: spacing6,
+  paddingRight: spacing6,
   '@media': {
     '(min-width: 768px)': {
-      paddingRight: [spacing0],
+      paddingRight: spacing0,
     },
   },
 });
@@ -72,7 +68,7 @@ export const content = style({
   paddingRight: [spacing6],
   '@media': {
     '(min-width: 768px)': {
-      paddingRight: [spacing0],
+      paddingRight: spacing0,
     },
   },
 });
@@ -86,11 +82,11 @@ export const nav = style({
 export const navList = style({
   display: 'flex',
   alignItems: 'flex-end',
-  paddingBottom: [spacing0],
-  margin: [spacing0],
+  paddingBottom: spacing0,
+  margin: spacing0,
   selectors: {
     'ul &': {
-      marginTop: [spacing0],
+      marginTop: spacing0,
     },
   },
 });
@@ -98,12 +94,12 @@ export const navList = style({
 export const navListItem = style({
   display: 'flex',
   fontSize: [fontSize5],
-  marginLeft: [spacing6],
-  marginBottom: [spacing1],
+  marginLeft: spacing6,
+  marginBottom: spacing1,
 });
 
 export const navLink = style({
-  textUnderlineOffset: [spacing2],
+  textUnderlineOffset: spacing2,
   selectors: {
     [`${nav} &`]: {
       textDecoration: 'none',
@@ -120,7 +116,7 @@ export const navLinkActive = style({
       textDecoration: 'underline',
     },
     [`${nav} &:hover`]: {
-      textUnderlineOffset: [spacing1],
+      textUnderlineOffset: spacing1,
     },
   },
 });

@@ -1,6 +1,10 @@
 import { themeVars } from '$lib/styles/themes/theme.css';
-import { spacing1, spacing2 } from '$lib/styles/vars/spacing.css';
+import { spacing } from '$lib/styles/vars/spacing.css';
 import { style } from '@vanilla-extract/css';
+
+const {
+  spacing: { spacing1, spacing2 },
+} = spacing;
 
 export const container = style({
   display: 'flex',
@@ -23,7 +27,7 @@ export const link = style({
   selectors: {
     [`${container} &`]: {
       color: themeVars.colour.background,
-      textUnderlineOffset: [spacing1],
+      textUnderlineOffset: spacing1,
     },
   },
 });

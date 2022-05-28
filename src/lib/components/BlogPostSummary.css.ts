@@ -5,17 +5,13 @@ import {
   fontSize3,
   fontWeightNormal,
 } from '$lib/styles/vars/font.css';
-import {
-  spacing0,
-  spacing1,
-  spacing10,
-  spacing12,
-  spacing2,
-  spacing4,
-  spacingPx2,
-} from '$lib/styles/vars/spacing.css';
+import { spacing } from '$lib/styles/vars/spacing.css';
 import { maxWidthFull } from '$lib/styles/vars/widths.css';
 import { style } from '@vanilla-extract/css';
+
+const {
+  spacing: { spacing0, spacing1, spacing10, spacing12, spacing2, spacing4, spacingPx2 },
+} = spacing;
 
 export const container = style({
   display: 'flex',

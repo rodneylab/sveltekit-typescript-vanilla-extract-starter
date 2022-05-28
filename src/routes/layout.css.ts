@@ -1,7 +1,11 @@
 import { themeVars } from '$lib/styles/themes/theme.css';
-import { spacing0, spacing6 } from '$lib/styles/vars/spacing.css';
+import { spacing } from '$lib/styles/vars/spacing.css';
 import { maxWidthFull, maxWidthWrapper } from '$lib/styles/vars/widths.css';
 import { style } from '@vanilla-extract/css';
+
+const {
+  spacing: { spacing0, spacing6 },
+} = spacing;
 
 export const container = style({
   display: 'flex',
@@ -23,8 +27,8 @@ export const container = style({
 
 export const main = style({
   maxWidth: [maxWidthWrapper],
-  marginLeft: [spacing6],
-  marginRight: [spacing6],
+  marginLeft: spacing6,
+  marginRight: spacing6,
   '@media': {
     '(min-width: 768px)': {
       width: [maxWidthFull],
