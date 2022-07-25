@@ -4,10 +4,10 @@
   "license": "BSD-3-Clause",
   "description": "SvelteKit TypeScript vanilla-extract starter: create a markdown blog site with responsive, Next-Gen image, PWA and vanilla-extract styles.",
   "scripts": {
-    "dev": "svelte-kit dev --port 3030",
-    "build": "svelte-kit build",
+    "dev": "vite dev --port 3000",
+    "build": "vite build",
     "package": "svelte-kit package",
-    "preview": "svelte-kit preview --port 3030",
+    "preview": "vite preview --port 3000",
     "prepare": "svelte-kit sync",
     "test": "playwright test",
     "check": "svelte-check --tsconfig ./tsconfig.json",
@@ -26,10 +26,10 @@
     "@js-temporal/polyfill": "^0.4.1",
     "@playwright/test": "^1.22.2",
     "@rodneylab/sveltekit-components": "^0.2.12",
-    "@sveltejs/adapter-static": "1.0.0-next.32",
+    "@sveltejs/adapter-static": "1.0.0-next.38",
     "@sveltejs/kit": "next",
     "@types/object-hash": "^2.2.1",
-    "@types/serviceworker": "^0.0.46",
+    "@types/serviceworker": "^0.0.48",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "@vanilla-extract/css": "^1.7.0",
@@ -49,14 +49,14 @@
     "prettier-plugin-svelte": "^2.7.0",
     "reading-time": "~1.4.0",
     "schema-dts": "^1.1.0",
-    "sharp": "0.29.3",
+    "sharp": "0.30.7",
     "svelte": "^3.48.0",
     "svelte-check": "^2.7.1",
     "svelte-preprocess": "^4.10.6",
     "tslib": "^2.4.0",
     "typescript": "~4.7.2",
     "vanilla-lazyload": "^17.8.2",
-    "vite": "^2.9.9",
+    "vite": "^3.0.0",
     "vite-imagetools": "^4.0.3"
   },
   "type": "module",
@@ -66,5 +66,8 @@
   },
   "bugs": {
     "url": "https://github.com/rodneylab/sveltekit-typescript-vanilla-extract-starter/issues"
+  },
+  "peerDependencies": {
+    "vite": "^3.0.0"
   }
 }
