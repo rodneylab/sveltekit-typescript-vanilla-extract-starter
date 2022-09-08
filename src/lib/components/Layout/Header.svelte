@@ -16,7 +16,7 @@
   $: lightThemeActive = $theme === 'light';
   $: themeButtonText = `Switch to ${lightThemeActive ? 'dark' : 'light'} theme`;
   import { screenReaderText } from '$lib/styles/styles.css';
-  import { browser } from '$app/env';
+  import { browser } from '$app/environment';
 
   export let slug: string;
 

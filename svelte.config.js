@@ -10,7 +10,6 @@ const config = {
   preprocess: [preprocess(), mdsvex({ extensions: ['.svelte.md', '.md', '.svx'] })],
   kit: {
     adapter: adapter(),
-    prerender: { default: true },
   },
 };
 

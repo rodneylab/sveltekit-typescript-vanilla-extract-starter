@@ -8,11 +8,12 @@
   import SEO from '$lib/components/SEO/index.svelte';
   import website from '$lib/config/website';
   import { cardContainer, cardContent, header, summaryHeading, summaryText } from './index.css';
-  import type { Post } from 'src/app';
-
-  export let posts: Post[];
+  import type { PageData } from './$types';
 
   const { author, siteUrl } = website;
+
+  export let data: PageData;
+  const { posts } = data;
 
   let title = 'Home';
   const breadcrumbs = [
