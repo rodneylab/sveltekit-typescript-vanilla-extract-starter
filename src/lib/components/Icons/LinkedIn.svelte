@@ -1,5 +1,6 @@
 <script lang="ts">
-  import Icon, { addCollection } from '@iconify/svelte/dist/OfflineIcon.svelte';
+  import 'iconify-icon';
+  import { addCollection } from 'iconify-icon';
 
   export let label: string = 'Linked in icon';
   export let colour: string = 'inherit';
@@ -20,4 +21,11 @@
   // https://api.iconify.design/simple-icons.json?icons=linkedin
 </script>
 
-<Icon icon="simple-icons:linkedin" {ariaHidden} aria-label={label} color={colour} {width} />
+<iconify-icon
+  style:color={colour}
+  role="img"
+  aria-label={label}
+  {ariaHidden}
+  icon="simple-icons:linkedin"
+  {width}
+/>

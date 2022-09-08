@@ -1,5 +1,6 @@
 <script lang="ts">
-  import Icon, { addCollection } from '@iconify/svelte/dist/OfflineIcon.svelte';
+  import 'iconify-icon';
+  import { addCollection } from 'iconify-icon';
 
   export let label: string = 'Light mode icon';
   export let colour: string = 'inherit';
@@ -20,4 +21,11 @@
   // https://api.iconify.design/heroicons-outline.json?icons=moon
 </script>
 
-<Icon icon="heroicons-outline:moon" {ariaHidden} aria-label={label} color={colour} {width} />
+<iconify-icon
+  style:color={colour}
+  role="img"
+  aria-label={label}
+  {ariaHidden}
+  icon="heroicons-outline:moon"
+  {width}
+/>

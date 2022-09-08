@@ -1,5 +1,6 @@
 <script>
-  import Icon, { addCollection } from '@iconify/svelte/dist/OfflineIcon.svelte';
+  import 'iconify-icon';
+  import { addCollection } from 'iconify-icon';
 
   export let label = 'Email icon';
   export let colour = 'inherit';
@@ -22,4 +23,11 @@
   // https://api.iconify.design/simple-line-icons.json?icons=envelope
 </script>
 
-<Icon icon="simple-line-icons:envelope" aria-label={label} {ariaHidden} color={colour} {width} />
+<iconify-icon
+  style:color={colour}
+  aria-label={label}
+  {ariaHidden}
+  icon="simple-line-icons:envelope"
+  {width}
+  role="img"
+/>

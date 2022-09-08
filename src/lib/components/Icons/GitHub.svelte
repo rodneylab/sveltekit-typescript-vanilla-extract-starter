@@ -1,5 +1,6 @@
 <script lang="ts">
-  import Icon, { addCollection } from '@iconify/svelte/dist/OfflineIcon.svelte';
+  import 'iconify-icon';
+  import { addCollection } from 'iconify-icon';
 
   export let label: string = 'Git hub icon';
   export let colour: string = 'inherit';
@@ -20,4 +21,11 @@
   // https://api.iconify.design/simple-icons.json?icons=github
 </script>
 
-<Icon icon="simple-icons:github" {ariaHidden} aria-label={label} color={colour} {width} />
+<iconify-icon
+  style:color={colour}
+  aria-label={label}
+  {ariaHidden}
+  icon="simple-icons:github"
+  {width}
+  role="img"
+/>

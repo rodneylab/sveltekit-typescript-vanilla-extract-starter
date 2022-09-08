@@ -1,5 +1,6 @@
 <script>
-  import Icon, { addCollection } from '@iconify/svelte/dist/OfflineIcon.svelte';
+  import 'iconify-icon';
+  import { addCollection } from 'iconify-icon';
 
   export let label = 'Telegram app icon';
   export let colour = 'inherit';
@@ -20,4 +21,11 @@
   // https://api.iconify.design/simple-icons.json?icons=telegram
 </script>
 
-<Icon icon="simple-icons:telegram" {ariaHidden} aria-label={label} color={colour} {width} />
+<iconify-icon
+  style:color={colour}
+  role="img"
+  aria-label={label}
+  {ariaHidden}
+  icon="simple-icons:telegram"
+  {width}
+/>
