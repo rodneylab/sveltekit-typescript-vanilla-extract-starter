@@ -17,7 +17,7 @@ const facebookAuthorPageName = PUBLIC_FACEBOOK_AUTHOR_PAGE;
 
 const website = {
   author: 'Rodney Johnson',
-  copyrightYear: '2022',
+  copyrightYear: '2022 – 2023',
   entity: 'Rodney Lab',
   ogLanguage: 'en_GB',
   siteLanguage: 'en-GB',

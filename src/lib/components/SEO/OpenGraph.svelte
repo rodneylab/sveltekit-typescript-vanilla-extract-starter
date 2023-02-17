@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { SEOImage } from 'src/app';
+  import type { SEOImage } from '$lib/types/image';
 
   export let article: boolean = false;
   export let datePublished: string;

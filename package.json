@@ -41,7 +41,6 @@
     "front-matter": "^4.0.2",
     "husky": "^8.0.3",
     "iconify-icon": "^1.0.5",
-    "leaflet": "^1.9.3",
     "mdsvex": "^0.10.6",
     "object-hash": "^3.0.0",
     "postcss": "^8.4.21",
@@ -66,9 +65,5 @@
   },
   "bugs": {
     "url": "https://github.com/rodneylab/sveltekit-typescript-vanilla-extract-starter/issues"
-  },
-  "peerDependencies": {
-    "leaflet": "^1.8.0",
-    "vite": "^3.0.0"
   }
 }

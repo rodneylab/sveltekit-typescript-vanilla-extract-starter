@@ -4,7 +4,7 @@ import srcsetauto from '$lib/assets/blog/twin-lens-reflex-camera/twin-lens-refle
 import ogImage from '$lib/assets/blog/twin-lens-reflex-camera/twin-lens-reflex-camera-open-graph.jpg';
 import ogSquareImage from '$lib/assets/blog/twin-lens-reflex-camera/twin-lens-reflex-camera-open-graph-square.jpg';
 import twitterImage from '$lib/assets/blog/twin-lens-reflex-camera/twin-lens-reflex-camera-twitter.jpg';
-import type { ImageData } from 'src/app';
+import type { ImageData } from '$lib/types/image';
 
 const { height, src, width } = meta;
 

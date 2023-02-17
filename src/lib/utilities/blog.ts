@@ -1,5 +1,5 @@
 import { compile } from 'mdsvex';
-import type { Frontmatter } from 'src/app';
+import type { Frontmatter } from '$lib/types/blog';
 export const BLOG_PATH = 'src/content/blog';
 
 export async function getSlugs() {
