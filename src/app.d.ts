@@ -60,7 +60,7 @@ export type SEOImage = {
 
 // types for vite-imagetools imports
 export declare global {
-  export module '*.jpg?w=1344;672&jpeg&srcset';
-  export module '*.jpg?w=1344;672&webp&srcset';
-  export module '*.jpg?width=672&metadata';
+  export module '*.jpg?w=1344;672&jpeg&as=srcset';
+  export module '*.jpg?w=1344;672&webp&as=srcset';
+  export module '*.jpg?w=672&as=meta:height;src;width';
 }

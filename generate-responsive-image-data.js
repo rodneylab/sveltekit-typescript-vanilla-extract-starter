@@ -88,7 +88,7 @@ const main = async () => {
             width < outputSizes[0] ? `${width};` : ''
           }${outputSizes.filter((outputSizesElement) => outputSizesElement <= width).join(';')}&${
             formatsElement === 'auto' ? format : formatsElement
-          }&srcset';`,
+          }&as=srcset';`,
       );
       const sources = `[\n${formats
         .map(
