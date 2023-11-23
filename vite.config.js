@@ -7,7 +7,7 @@ const config = {
   define: {
     'process.env.VITE_BUILD_TIME': JSON.stringify(new Date().toISOString()),
   },
-  plugins: [vanillaExtractPlugin(), imagetools({ force: true }), sveltekit()],
+  plugins: [vanillaExtractPlugin(), imagetools(), sveltekit()],
   server: {
     port: 5173,
     strictPort: false,
@@ -19,7 +19,9 @@ const config = {
   ssr:
     process.env.NODE_ENV === 'development'
       ? {}
-      : { noExternal: ['@vanilla-extract/css', '@vanilla-extract/css/fileScope'] },
+      : {
+          noExternal: ['@vanilla-extract/css', '@vanilla-extract/css/fileScope'],
+        },
 };
 
 export default config;
