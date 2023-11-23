@@ -13,7 +13,11 @@
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/sveltekit-typescript-vanilla-extract-starter)
 
-Starter for a vanila-extract SvelteKit blog using TypeScript, mdsvex and Iconify. There is more detail in the <a aria-label="Open Rodney Lab blog post on Svelte Kit Shiki syntax highlighting" href="https://rodneylab.com/sveltekit-typescript-vanilla-extract-starter/">post on introducing the SvelteKit TypeScript vanilla-extract starter</a>. If you have any questions, please drop a comment at the bottom of that page.
+Starter for a vanila-extract SvelteKit blog using TypeScript, mdsvex and
+Iconify. There is more detail in the
+<a aria-label="Open Rodney Lab blog post on Svelte Kit Shiki syntax highlighting" href="https://rodneylab.com/sveltekit-typescript-vanilla-extract-starter/">post
+on introducing the SvelteKit TypeScript vanilla-extract starter</a>. If you have
+any questions, please drop a comment at the bottom of that page.
 
 ## Building and previewing the site
 
@@ -32,6 +36,9 @@ pnpm run dev
 pnpm run build
 ```
 
-> You can preview the built app with `pnpm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+> You can preview the built app with `pnpm run preview`, regardless of whether
+> you installed an adapter. This should _not_ be used to serve your app in
+> production.
 
-Feel free to jump into the [Rodney Lab matrix chat room](https://matrix.to/#/%23rodney:matrix.org).
+Feel free to jump into the
+[Rodney Lab matrix chat room](https://matrix.to/#/%23rodney:matrix.org).

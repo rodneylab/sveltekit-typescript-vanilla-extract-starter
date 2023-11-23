@@ -28,7 +28,13 @@ async function generateImageMeta(source) {
   const { format, width, height } = metadataResult;
   const { r, g, b } = dominantColourObject;
   const dominantColourValue = `#${r.toString(16)}${g.toString(16)}${b.toString(16)}`;
-  return { dominantColour: dominantColourValue, placeholder, format, width, height };
+  return {
+    dominantColour: dominantColourValue,
+    placeholder,
+    format,
+    width,
+    height,
+  };
 }
 
 function getPosts(location) {
