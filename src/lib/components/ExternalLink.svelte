@@ -1,10 +1,13 @@
 <script lang="ts">
-  import Link from '$lib/components/Link.svelte';
+	import Link from '$lib/components/Link.svelte';
 
-  export let rel: string = 'nofollow noopener noreferrer';
-  export let target: string = '_blank';
-  export let href: string;
-  export let ariaLabel: string;
+	let {
+		children,
+		rel = 'nofollow noopener noreferrer',
+		target = '_blank',
+		href,
+		ariaLabel,
+	} = $props();
 </script>
 
-<Link {ariaLabel} {href} {rel} {target}><slot /></Link>
+<Link {ariaLabel} {href} {rel} {target}>{@render children?.()}</Link>

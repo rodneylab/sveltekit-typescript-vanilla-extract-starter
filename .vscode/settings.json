@@ -1,18 +1,18 @@
 {
-  "editor.formatOnSave": true,
-  "explorer.fileNesting.patterns": {
-    "*.svelte": "${capture}.css.ts"
-  },
-  "[markdown]": {
-    "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 80,
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
-    }
-  },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  }
+	"editor.formatOnSave": true,
+	"explorer.fileNesting.patterns": {
+		"*.svelte": "${capture}.css.ts"
+	},
+	"[markdown]": {
+		"editor.wordWrap": "bounded",
+		"editor.wordWrapColumn": 80,
+		"editor.quickSuggestions": {
+			"comments": "off",
+			"strings": "off",
+			"other": "off"
+		}
+	},
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	}
 }
