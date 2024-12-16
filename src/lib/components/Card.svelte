@@ -1,11 +1,11 @@
 <script lang="ts">
-  export let containerClass: string | undefined = undefined;
-  export let contentClass: string | undefined = undefined;
-  import { container, content } from '$lib/components/Card.css';
+	import { container, content } from './Card.css';
+
+	let { children, containerClass = undefined, contentClass = undefined } = $props();
 </script>
 
 <section class={`${container} ${containerClass ?? ''}`}>
-  <div class={`${content} ${contentClass ?? ''}`}>
-    <slot />
-  </div>
+	<div class={`${content} ${contentClass ?? ''}`}>
+		{@render children?.()}
+	</div>
 </section>

@@ -9,21 +9,21 @@ import type { ImageData } from '$lib/types/image';
 const { height, src, width } = meta;
 
 const data: ImageData = {
-  slug: 'folding-camera',
-  alt: 'Photograph of a classic folding camera',
-  width,
-  height,
-  src,
-  sources: [
-    { srcset: srcsetwebp, type: 'image/webp' },
-    { srcset: srcsetauto, type: 'image/jpeg' },
-  ],
-  dominantColour: '#f8f8f8',
-  placeholder:
-    'data:image/jpeg;base64,/9j/2wBDAAwREhMUFBUUFBofGhUaHiIcGhohKC4jJB4hMzg/PTouKC5CRFpMPi5XRTc3VmBRVlpgZmRkQklveXFmeFtlaWf/2wBDAQgMDQwNDw8PDxFgEBIaVmBaYFpgY2NjY2BjYGBiY2NjY2NjY2NjY2NjY2JjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAACzoQf/xAAcEAABBAMBAAAAAAAAAAAAAAACAQMEIQUQEXH/2gAIAQEAAT8AZSYOSfUrimI8uh8TX//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Af//Z',
-  ogImage,
-  ogSquareImage,
-  twitterImage,
+	slug: 'folding-camera',
+	alt: 'Photograph of a classic folding camera',
+	width,
+	height,
+	src,
+	sources: [
+		{ srcset: srcsetwebp, type: 'image/webp' },
+		{ srcset: srcsetauto, type: 'image/jpeg' },
+	],
+	dominantColour: '#f8f8f8',
+	placeholder:
+		'data:image/jpeg;base64,/9j/2wBDAAwREhMUFBUUFBofGhUaHiIcGhohKC4jJB4hMzg/PTouKC5CRFpMPi5XRTc3VmBRVlpgZmRkQklveXFmeFtlaWf/2wBDAQgMDQwNDw8PDxFgEBIaVmBaYFpgY2NjY2BjYGBiY2NjY2NjY2NjY2NjY2JjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAACzoQf/xAAcEAABBAMBAAAAAAAAAAAAAAACAQMEIQUQEXH/2gAIAQEAAT8AZSYOSfUrimI8uh8TX//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Af//Z',
+	ogImage,
+	ogSquareImage,
+	twitterImage,
 };
 
 export { data as default };
